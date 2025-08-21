@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Star, ShoppingCart, Truck } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-smart-farm.jpg";
 
 const Hero = () => {
@@ -41,13 +42,17 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" className="text-lg px-8 py-4">
-                <ShoppingCart className="mr-2 h-5 w-5" />
-                Shop Now
-              </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-tech-green text-tech-green hover:bg-tech-green hover:text-white">
-                View Catalog
-              </Button>
+              <Link to="/shop">
+                <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+                  <ShoppingCart className="mr-2 h-5 w-5" />
+                  Shop Now
+                </Button>
+              </Link>
+              <Link to="/fresh-produce">
+                <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-tech-green text-tech-green hover:bg-tech-green hover:text-white">
+                  View Catalog
+                </Button>
+              </Link>
             </div>
 
             {/* Trust Indicators */}
