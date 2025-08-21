@@ -18,6 +18,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter', 'system-ui', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,7 +64,32 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Smart Farm Custom Colors
+				'tech-green': {
+					DEFAULT: 'hsl(var(--tech-green))',
+					light: 'hsl(var(--tech-green-light))'
+				},
+				'earth-green': {
+					DEFAULT: 'hsl(var(--earth-green))',
+					light: 'hsl(var(--earth-green-light))'
+				},
+				'nature-white': 'hsl(var(--nature-white))',
+				'nature-gray': 'hsl(var(--nature-gray))'
+			},
+			backgroundImage: {
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-card': 'var(--gradient-card)',
+				'gradient-data': 'var(--gradient-data)'
+			},
+			boxShadow: {
+				'soft': 'var(--shadow-soft)',
+				'card': 'var(--shadow-card)', 
+				'button': 'var(--shadow-button)'
+			},
+			transitionTimingFunction: {
+				'smooth': 'cubic-bezier(0.16, 1, 0.3, 1)',
+				'bounce': 'cubic-bezier(0.68, -0.55, 0.265, 1.55)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
